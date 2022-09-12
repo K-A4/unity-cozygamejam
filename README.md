@@ -1,2 +1,2 @@
 # CozyGame
-A simple game for coziAutum gamejam
+A simple game for #CozyAutumnGameJam2022
