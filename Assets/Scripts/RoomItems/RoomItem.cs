@@ -18,6 +18,7 @@ public class RoomItemInfo
     public float MaxHealth = 0;
     public float CozyPerBuy = 0;
     public float CozyPerUse = 0;
+    public bool IsLarge = false;
 }
 
 public abstract class RoomItem : MonoBehaviour

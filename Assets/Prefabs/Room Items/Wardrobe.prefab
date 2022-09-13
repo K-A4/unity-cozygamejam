@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1949349110281483848
+--- !u!1 &1034285159306041976
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1949349110281483853}
-  - component: {fileID: 1949349110281483852}
-  - component: {fileID: 1949349110281483851}
-  - component: {fileID: 1949349110281483850}
-  - component: {fileID: 1949349110281483849}
+  - component: {fileID: 365165901019168962}
+  - component: {fileID: 3656518167630073703}
+  - component: {fileID: 1538674917498338221}
+  - component: {fileID: 7214095625264545022}
+  - component: {fileID: 8027033756349098679}
+  - component: {fileID: -2466293503097110152}
   m_Layer: 0
-  m_Name: TableTest3
+  m_Name: Wardrobe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1949349110281483853
+--- !u!4 &365165901019168962
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949349110281483848}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1034285159306041976}
+  m_LocalRotation: {x: -6.123234e-17, y: 1, z: 6.123234e-17, w: -3.7493994e-33}
+  m_LocalPosition: {x: 9.17617, y: 1.15, z: 10.58218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1949349110281483852
+--- !u!33 &3656518167630073703
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949349110281483848}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1949349110281483851
+  m_GameObject: {fileID: 1034285159306041976}
+  m_Mesh: {fileID: -7401835733204412108, guid: b03413463d2f0c54da509e10f15b48bb, type: 3}
+--- !u!23 &1538674917498338221
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949349110281483848}
+  m_GameObject: {fileID: 1034285159306041976}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +64,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c4d332a5ec3329f4397f8d3198e5e86f, type: 2}
+  - {fileID: 2100000, guid: 3146a4802bad9c743adf935c1890d252, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,34 +87,51 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1949349110281483850
+--- !u!65 &7214095625264545022
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949349110281483848}
+  m_GameObject: {fileID: 1034285159306041976}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1949349110281483849
+  m_Size: {x: 0.733377, y: 2, z: 0.5312532}
+  m_Center: {x: -0.00000013411045, y: 0, z: 0.02227962}
+--- !u!54 &8027033756349098679
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034285159306041976}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-2466293503097110152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949349110281483848}
+  m_GameObject: {fileID: 1034285159306041976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef35d4b0edbd6a408c03b124845f517, type: 3}
+  m_Script: {fileID: 11500000, guid: dae39749eb69be34fb90f51bc30a21e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   info:
-    Name: Table 3
-    Cost: 78
-    MaxHealth: 46
-    CozyPerBuy: 5
-    CozyPerUse: 6
+    Name: Wardrobe
+    Cost: 30
+    MaxHealth: 60
+    CozyPerBuy: 20
+    CozyPerUse: 5
+    IsLarge: 1

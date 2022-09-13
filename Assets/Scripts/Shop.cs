@@ -17,7 +17,7 @@ public class Shop : MonoBehaviour
 
     private Dictionary<UITileListItem, RoomItem> offersList = new Dictionary<UITileListItem, RoomItem>();
 
-    void Start()
+    private void Start()
     {
         CreateOffers();
         tileList.OnItemClick += (i) => BuyItem(offersList[i]);
@@ -40,7 +40,10 @@ public class Shop : MonoBehaviour
     public void BuyItem(RoomItem item)
     {
         CreateOffers();
-        Debug.Log($"Bought {item.Info.Name}");
+        gameObject.SetActive(false);
+        var newItem = Instantiate(item);
+        Player.Instance.Grabber.SetGrabItem(newItem.GetComponent<Rigidbody>(), item.Info.IsLarge);
+        //Debug.Log($"Bought {item.Info.Name}");
     }
 
     private void CreateItemTile(RoomItem roomItem)

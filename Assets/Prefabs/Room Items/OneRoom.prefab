@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5066572033724390703}
   - component: {fileID: 4123007816474563240}
   - component: {fileID: 3761488800629655493}
+  - component: {fileID: 4455068837903061933}
   m_Layer: 0
   m_Name: OneRoom
   m_TagString: Untagged
@@ -145,9 +146,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 2100000, guid: 601e05e608902c54594e244e54da082f, type: 2}
+  - {fileID: 2100000, guid: ec346cfc04cb9e84c8b7931739a3658e, type: 2}
+  - {fileID: 2100000, guid: 370b6158b3dccca44b86ef8fc38db48e, type: 2}
+  - {fileID: 2100000, guid: fab9ef0a3d913b64095063bb7c5bee31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -169,6 +170,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4455068837903061933
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3130182814902899251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8593203018496362054, guid: cb6c7d65512c8a642a18be26713cb062, type: 3}
 --- !u!1 &8219852725047070762
 GameObject:
   m_ObjectHideFlags: 0
