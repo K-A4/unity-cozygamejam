@@ -12,6 +12,12 @@ public class CozyOfPlayer : MonoBehaviour
     public UnityEvent EndCozyEvent;
 
     private float cozy;
+    [SerializeField] private float defaultCozy;
+
+    private void Start()
+    {
+        cozy = defaultCozy;
+    }
 
     public void ChangeCozy(float value)
     {
