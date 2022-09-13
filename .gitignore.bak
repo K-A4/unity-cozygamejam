@@ -59,7 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 #ProjectSettings
-/[Pp]rojectSettings/
+/[Pp]rojectSettings/ProjectVersion.txt
 
 #UserSettings
 /[Uu]serSettings/

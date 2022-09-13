@@ -22,13 +22,13 @@ public abstract class RoomItem : MonoBehaviour
 {
     public abstract int PlacementRules { get; }
     public float Health { get; protected set; } = 0;
-    public RoomItemInfo info { get; protected set; }
+    public RoomItemInfo Info { get; protected set; }
 
     public void SetParams(RoomItemInfo info)
     {
-        this.info = info;
+        this.Info = info;
         Health = info.MaxHealth;
     }
 
-    public abstract void Use();
+    public abstract void Use(CozyOfPlayer cozyOfPlayer);
 }
