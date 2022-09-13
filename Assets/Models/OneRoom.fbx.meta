@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: CarpetMaterial
+    second: {fileID: 2100000, guid: d6b6bebc074e1984bad0aa22e3a0aafc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChairMaterial
+    second: {fileID: 2100000, guid: e84c75e93d4efb44d985d63feb2ccfd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: GlassMaterial
     second: {fileID: 2100000, guid: de2f242694dc1b24dab30254cdb6ba51, type: 2}
   - first:

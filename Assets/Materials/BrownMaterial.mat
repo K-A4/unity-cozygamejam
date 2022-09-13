@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WoodMaterial
+  m_Name: BrownMaterial
   m_Shader: {fileID: 4800000, guid: 8a8d298bca0cf02498394ecc13751b0e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -26,6 +26,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.5058824, g: 0.3019608, b: 0.43137255, a: 1}
-    - _ShadowColor: {r: 0.27450982, g: 0.10588236, b: 0.19607845, a: 1}
+    - _Color: {r: 0.49056602, g: 0.2582104, b: 0.19622639, a: 1}
+    - _ShadowColor: {r: 0.18867922, g: 0.11754853, b: 0.070131704, a: 1}
   m_BuildTextureStacks: []
