@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    [Header("Shop items")]
+    [Header("Data")]
     [SerializeField] private RoomItemsData roomItemsData;
 
     [Space(1)]
-    [Header("Prefabs")]
-    [SerializeField] private UITileListItem tileListShopItem;
-
-    [Space(1)]
-    [Header("Links")]
+    [Header("UI Links")]
+    [SerializeField] private UITileListItem shopTilePrefab;
     [SerializeField] private UITileList tileList;
 
     private Dictionary<UITileListItem, RoomItem> offersList = new Dictionary<UITileListItem, RoomItem>();
@@ -20,7 +17,7 @@ public class Shop : MonoBehaviour
     private void Start()
     {
         CreateOffers();
-        tileList.OnItemClick += (i) => BuyItem(offersList[i]);
+        tileList.OnItemClick += (tile) => BuyItem(offersList[tile]);
     }
 
     public void CreateOffers()
@@ -47,13 +44,17 @@ public class Shop : MonoBehaviour
 
     private void CreateItemTile(RoomItem roomItem)
     {
-        UITileListItem tile = Instantiate(tileListShopItem, tileList.transform);//.GetComponent<UITileListItem>();
         var itemInfo = roomItem.Info;
-        tile.Name = itemInfo.Name;
-        tile.SetTextItem(0, itemInfo.Cost.ToString());
-        tile.SetTextItem(1, itemInfo.MaxHealth.ToString());
-        tile.SetTextItem(2, $"{itemInfo.CozyPerBuy}/{itemInfo.CozyPerUse}");
-        tileList.Add(tile);
+        var tile = tileList.Add(
+            shopTilePrefab,
+            itemInfo.Name,
+            new string[] 
+            { 
+                $"-{itemInfo.Cost}",
+                $"{itemInfo.MaxHealth}",
+                $"+{itemInfo.CozyPerBuy}/{itemInfo.CozyPerUse}"
+            }
+        );
         offersList.Add(tile, roomItem);
     } 
 }

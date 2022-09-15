@@ -16,11 +16,23 @@ public class UITileList : MonoBehaviour
         gridLayout = GetComponent<GridLayoutGroup>();
     }
 
-    public void Add(UITileListItem item)
+    private void Add(UITileListItem item)
     {
         item.OnClick += (i) => OnItemClick.Invoke(i);
         tileListItems.Add(item);
         RebuildLayout();
+    }
+
+    public UITileListItem Add(UITileListItem tilePrefab, string name, string[] textParams)
+    {
+        UITileListItem tile = Instantiate(tilePrefab, transform);
+        tile.Name = name;
+        for(int i = 0; i < textParams.Length; i++)
+        {
+            tile.SetTextItem(i, textParams[i]);
+        }
+        Add(tile);
+        return tile;
     }
 
     public void Remove(int index)

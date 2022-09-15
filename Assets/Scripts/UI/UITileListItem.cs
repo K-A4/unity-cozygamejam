@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,10 +33,10 @@ public class UITileListItem : MonoBehaviour
     }
     public Action<UITileListItem> OnClick { get; set; }
 
-    [SerializeField] private Text TileName;
+    [SerializeField] private TextMeshProUGUI TileName;
     [SerializeField] private Image TileIcon;
     [SerializeField] private Button TileButton;
-    [SerializeField] private Text[] TileTextItems;
+    [SerializeField] private TextMeshProUGUI[] TileTextItems;
 
     protected string name;
 
