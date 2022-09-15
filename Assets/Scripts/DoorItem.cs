@@ -5,14 +5,13 @@ using UnityEngine;
 public class DoorItem : RoomItem
 {
     public override int PlacementRules => throw new System.NotImplementedException();
-
     private bool open;
-
-    private Quaternion openAngle;
+    private Quaternion closeAngle;
+    [SerializeField] private float openAngle;
 
     private void Start()
     {
-        openAngle = transform.rotation;
+        closeAngle = transform.rotation;
     }
 
     public override void Use(CozyOfPlayer cozyOfPlayer)

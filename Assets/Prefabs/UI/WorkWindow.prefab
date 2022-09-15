@@ -59,6 +59,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Work
       objectReference: {fileID: 0}
+    - target: {fileID: 6186927406853790581, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2981178110081294042}
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 7428561778602887100, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -113,11 +125,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
---- !u!4 &5677663591366018429 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7428561778709098694, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
-  m_PrefabInstance: {fileID: 3016445692847961531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5677663590729643148 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7428561779077038391, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
@@ -129,3 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90c1ef8b9d51a47a25227c41df37fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &5677663591366018429 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7428561778709098694, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+  m_PrefabInstance: {fileID: 3016445692847961531}
+  m_PrefabAsset: {fileID: 0}

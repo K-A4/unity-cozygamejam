@@ -10,7 +10,7 @@ public class WorkOfferInfo
     public float CozyDamage;
 }
 
-public class Work : MonoBehaviour
+public class Work : UIWindow
 {
     [Header("Data")]
     [SerializeField] private WorkOffersData workOffersData;

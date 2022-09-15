@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6476680442454552200}
   - component: {fileID: 5048006200934103464}
   - component: {fileID: 5687439224668152627}
+  - component: {fileID: 833712859471363154}
   m_Layer: 0
   m_Name: OneRoom.004
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &833712859471363154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857392031181970745}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06603098, y: 1.120079, z: 0.7782485}
+  m_Center: {x: -0.009052753, y: -0.00000020861626, z: 0.00000020861626}
 --- !u!1 &3130182814902899251
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +243,7 @@ GameObject:
   - component: {fileID: 9123677695970523462}
   - component: {fileID: 8476063332204685047}
   - component: {fileID: 4713524346303919844}
+  - component: {fileID: 324959672788989965}
   m_Layer: 0
   m_Name: OneRoom.002
   m_TagString: Untagged
@@ -302,3 +317,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &324959672788989965
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170571671726607571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06603098, y: 1.120079, z: 0.7782485}
+  m_Center: {x: -0.009052753, y: -0.00000020861626, z: 0.00000020861626}

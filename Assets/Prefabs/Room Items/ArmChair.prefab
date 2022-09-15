@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7387096353242389175}
   - component: {fileID: 7387096353242389174}
   - component: {fileID: 4611828128185726638}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArmChair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,4 +179,5 @@ MonoBehaviour:
     MaxHealth: 7
     CozyPerBuy: 5
     CozyPerUse: 5
+    IsLarge: 0
   sitPos: {fileID: 5429824987874077746}

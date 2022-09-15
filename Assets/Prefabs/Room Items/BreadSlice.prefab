@@ -134,3 +134,4 @@ MonoBehaviour:
     MaxHealth: 1
     CozyPerBuy: 0
     CozyPerUse: 10
+    IsLarge: 0

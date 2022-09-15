@@ -1,26 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Interactor : MonoBehaviour
 {
-    [SerializeField] private CozyOfPlayer cozyPlayer;
+    [SerializeField] private UnityEvent<bool> onHover;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        RaycastHit hit;
+        bool hover = false;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2))
         {
-            RaycastHit hit;
-            
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 1))
+            if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Interact"))
             {
-                RoomItem interactItem= hit.transform.GetComponent<RoomItem>();
-                InteractWith(interactItem);
+                hover = true;
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if (hit.transform.TryGetComponent(out RoomItem interactItem))
+                    {
+                        InteractWith(interactItem);
+                    }
+                }
             }
         }
+
+        onHover?.Invoke(hover);
     }
+
     private void InteractWith(RoomItem interactItem)
     {
-        interactItem.Use(cozyPlayer);
+        interactItem.Use(Player.Instance.CozyOfPlayer);
     }
 }

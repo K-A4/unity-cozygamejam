@@ -19,6 +19,11 @@ public class CozyOfPlayer : MonoBehaviour
         cozy = defaultCozy;
     }
 
+    private void Update()
+    {
+        ChangeCozy(-Time.deltaTime * Time.deltaTime);
+    }
+
     public void ChangeCozy(float value)
     {
         cozy += value;
@@ -29,6 +34,6 @@ public class CozyOfPlayer : MonoBehaviour
             EndCozyEvent.Invoke();
         }
 
-        CozyChanged.Invoke(cozy);
+        CozyChanged.Invoke(cozy/defaultCozy);
     }
 }

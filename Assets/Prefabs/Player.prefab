@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7997421346175362549}
   - component: {fileID: 7997421346175362550}
   - component: {fileID: 6048696045854014627}
+  - component: {fileID: 1776784138}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7997421346175362551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.9567697, y: 0.62, z: 2.2319388}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7997421346502710355}
@@ -143,8 +144,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f81c8bc90c6d184e8de9d226789c43a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CozyOfPlayer: {fileID: 0}
+  CozyOfPlayer: {fileID: 1776784138}
   Grabber: {fileID: 6252297186210896411}
+  Cameralook: {fileID: 7997421346502710354}
+  PlayerMovement: {fileID: 7997421346175362550}
+  Interactor: {fileID: 1974657479}
+--- !u!114 &1776784138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7997421346175362551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3691d5716825f0478f746e1a241432f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CozyChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  EndCozyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  defaultCozy: 0
 --- !u!1 &7997421346502710358
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,8 +298,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

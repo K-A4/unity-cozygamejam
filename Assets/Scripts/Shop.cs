@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shop : MonoBehaviour
+public class Shop : UIWindow
 {
     [Header("Data")]
     [SerializeField] private RoomItemsData roomItemsData;
@@ -56,5 +56,5 @@ public class Shop : MonoBehaviour
             }
         );
         offersList.Add(tile, roomItem);
-    } 
+    }
 }
