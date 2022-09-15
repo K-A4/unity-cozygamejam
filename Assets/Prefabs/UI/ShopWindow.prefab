@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6348158661343118267
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6348158661343118269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3850824, y: 1.3850824, z: 1.3850824}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6348158662404998942}
@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3418e4e1181925e438eee49f28a26583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomItemsData: {fileID: 11400000, guid: db01b7ceb3e87f241a06ecf98c2d73d2, type: 2}
   tileListShopItem: {fileID: 8513210063787930339, guid: 974e5d289c2c4f1408a607712ba280c8, type: 3}
   tileList: {fileID: 6348158661967853295}
 --- !u!1001 &4543777153309210584
@@ -54,9 +55,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6348158661343118267}
     m_Modifications:
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 7428561778071354335, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
       propertyPath: m_Text
       value: Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428561778417030472, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7428561778602887100, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
       propertyPath: m_Sprite
@@ -112,11 +141,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
---- !u!4 &6348158662404998942 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7428561778709098694, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
-  m_PrefabInstance: {fileID: 4543777153309210584}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6348158661967853295 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7428561779077038391, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
@@ -128,3 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90c1ef8b9d51a47a25227c41df37fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &6348158662404998942 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7428561778709098694, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+  m_PrefabInstance: {fileID: 4543777153309210584}
+  m_PrefabAsset: {fileID: 0}

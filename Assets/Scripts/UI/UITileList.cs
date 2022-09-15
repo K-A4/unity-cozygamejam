@@ -20,7 +20,6 @@ public class UITileList : MonoBehaviour
     {
         item.OnClick += (i) => OnItemClick.Invoke(i);
         tileListItems.Add(item);
-        item.gameObject.transform.SetParent(gridLayout.gameObject.transform);
         RebuildLayout();
     }
 

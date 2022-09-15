@@ -41,14 +41,13 @@ public class Shop : MonoBehaviour
     {
         CreateOffers();
         gameObject.SetActive(false);
-        var newItem = Instantiate(item);
-        Player.Instance.Grabber.SetGrabItem(newItem.GetComponent<Rigidbody>(), item.Info.IsLarge);
+        var newItem = Instantiate(item, Vector3.zero * 1, Quaternion.identity);
         //Debug.Log($"Bought {item.Info.Name}");
     }
 
     private void CreateItemTile(RoomItem roomItem)
     {
-        UITileListItem tile = Instantiate(tileListShopItem);//.GetComponent<UITileListItem>();
+        UITileListItem tile = Instantiate(tileListShopItem, tileList.transform);//.GetComponent<UITileListItem>();
         var itemInfo = roomItem.Info;
         tile.Name = itemInfo.Name;
         tile.SetTextItem(0, itemInfo.Cost.ToString());
