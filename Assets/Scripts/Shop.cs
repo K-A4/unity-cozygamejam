@@ -38,7 +38,16 @@ public class Shop : UIWindow
     {
         CreateOffers();
         gameObject.SetActive(false);
-        var newItem = Instantiate(item, Vector3.zero * 1, Quaternion.identity);
+        if (item.Info.IsLarge)
+        {
+            var newItem = Instantiate(item, Vector3.zero * 1, Quaternion.identity);
+        }
+        else
+        {
+            var newItem = Instantiate(roomItemsData.Box, Vector3.zero * 1, Quaternion.identity);
+            newItem.SetItemPrefab(item);
+        }
+
         //Debug.Log($"Bought {item.Info.Name}");
     }
 

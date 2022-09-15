@@ -7,9 +7,9 @@ public class CozyOfPlayer : MonoBehaviour
 {
     public float Cozy { get; }
 
-    public UnityEvent<float> CozyChanged;
+    public UnityEvent<float> OnCozyChanged;
 
-    public UnityEvent EndCozyEvent;
+    public UnityEvent OnEndCozyEvent;
 
     private float cozy;
     [SerializeField] private float defaultCozy;
@@ -21,7 +21,7 @@ public class CozyOfPlayer : MonoBehaviour
 
     private void Update()
     {
-        ChangeCozy(-Time.deltaTime * Time.deltaTime);
+        ChangeCozy(- Time.time * Time.time);
     }
 
     public void ChangeCozy(float value)
@@ -31,9 +31,9 @@ public class CozyOfPlayer : MonoBehaviour
         if (cozy < 0)
         {
             cozy = 0;
-            EndCozyEvent.Invoke();
+            OnEndCozyEvent.Invoke();
         }
 
-        CozyChanged.Invoke(cozy/defaultCozy);
+        OnCozyChanged.Invoke(cozy / defaultCozy);
     }
 }
