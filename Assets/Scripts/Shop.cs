@@ -37,17 +37,24 @@ public class Shop : UIWindow
     public void BuyItem(RoomItem item)
     {
         CreateOffers();
-        gameObject.SetActive(false);
-        if (item.Info.IsLarge)
+
+        if (Player.Instance.CozyOfPlayer.ChangeMoney(-item.Info.Cost))
         {
-            var newItem = Instantiate(item, Vector3.zero * 1, Quaternion.identity);
-        }
-        else
-        {
-            var newItem = Instantiate(roomItemsData.Box, Vector3.zero * 1, Quaternion.identity);
-            newItem.SetItemPrefab(item);
+            
+            gameObject.SetActive(false);
+            if (item.Info.IsLarge)
+            {
+                var newItem = Instantiate(item, Vector3.zero * 1, Quaternion.identity);
+            }
+            else
+            {
+                var newItem = Instantiate(roomItemsData.Box, Vector3.zero * 1, Quaternion.identity);
+                newItem.SetItemPrefab(item);
+            }
+            Player.Instance.CozyOfPlayer.ChangeCozy(item.Info.CozyPerBuy);
         }
 
+        
         //Debug.Log($"Bought {item.Info.Name}");
     }
 

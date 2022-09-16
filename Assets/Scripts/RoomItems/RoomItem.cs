@@ -24,14 +24,39 @@ public class RoomItemInfo
 public abstract class RoomItem : MonoBehaviour
 {
     public abstract int PlacementRules { get; }
-    public float Health { get; protected set; } = 0;
+    public float Health 
+    {
+        get
+        {
+            return health;
+        }
+        protected set
+        {
+            health = value;
+            if(health <= 0)
+            {
+                OnEndHealth();
+            }
+        } 
+    }
+
+    private float health;
     public RoomItemInfo Info => info;
     [SerializeField] private RoomItemInfo info;
 
     protected virtual void Awake()
     {
-        Health = Info.MaxHealth;
+        health = Info.MaxHealth;
     }
 
-    public abstract void Use(CozyOfPlayer cozyOfPlayer);
+    public virtual void Use(CozyOfPlayer cozyOfPlayer)
+    {
+        cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
+        Health--;
+    }
+
+    public virtual void OnEndHealth()
+    {
+        Destroy(gameObject);
+    }
 }

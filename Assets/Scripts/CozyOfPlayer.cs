@@ -5,35 +5,61 @@ using UnityEngine.Events;
 
 public class CozyOfPlayer : MonoBehaviour
 {
-    public float Cozy { get; }
+    public float Cozy { get; private set; } = 0;
+    public float MaxCozy => maxCozyCount;
+    public float Money { get; private set; } = 0;
+    public float Skills { get; private set; } = 0;
+
+
 
     public UnityEvent<float> OnCozyChanged;
-
+    public UnityEvent<float> OnMoneyChanged;
     public UnityEvent OnEndCozyEvent;
 
-    private float cozy;
-    [SerializeField] private float defaultCozy;
+    [SerializeField] private float startCozyCount = 100;
+    [SerializeField] private float maxCozyCount = 100;
+    [SerializeField] private float startMoneyCount;
 
     private void Start()
     {
-        cozy = defaultCozy;
+        SetCozy(startCozyCount);
+        SetMoney(startMoneyCount);
     }
 
     private void Update()
     {
-        ChangeCozy(- Time.time * Time.time);
+        ChangeCozy(-Time.time * 0.001f);
     }
 
     public void ChangeCozy(float value)
     {
-        cozy += value;
+        SetCozy(Cozy + value);
+    }
 
-        if (cozy < 0)
+    public bool ChangeMoney(float value)
+    {
+        return SetMoney(Money + value);
+    }
+
+    public bool SetMoney(float value)
+    {
+        if (value < 0)
+            return false;
+
+        Money = value;
+        OnMoneyChanged.Invoke(Money);
+        return true;
+    }
+
+    public void SetCozy(float value)
+    {
+        Cozy = value;
+        if (Cozy < 0)
         {
-            cozy = 0;
+            Cozy = 0;
             OnEndCozyEvent.Invoke();
         }
 
-        OnCozyChanged.Invoke(cozy / defaultCozy);
+        OnCozyChanged.Invoke(Cozy);
     }
 }
