@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1748272893323949568}
   - component: {fileID: 3362638924824735257}
   - component: {fileID: 2197315946806723726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EdgedCup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,3 +134,4 @@ MonoBehaviour:
     MaxHealth: 5
     CozyPerBuy: 0
     CozyPerUse: 10
+    IsLarge: 0

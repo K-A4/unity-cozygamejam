@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1927219848516402056}
   - component: {fileID: 2336132745213565676}
   - component: {fileID: 2424228331317729705}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,3 +134,4 @@ MonoBehaviour:
     MaxHealth: 5
     CozyPerBuy: 0
     CozyPerUse: 10
+    IsLarge: 0

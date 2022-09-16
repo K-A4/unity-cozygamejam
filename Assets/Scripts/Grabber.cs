@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +19,6 @@ public class Grabber : MonoBehaviour
         GrabInput();
 
         Grabbing();
-        Debug.DrawRay(transform.position, transform.forward*10);
     }
 
     private void Grabbing()
@@ -40,7 +39,7 @@ public class Grabber : MonoBehaviour
             }
         }
     }
-
+    
     private void GrabInHand()
     {
         var deltaRot = transform.rotation * Quaternion.Inverse(prevRotation);
@@ -54,7 +53,7 @@ public class Grabber : MonoBehaviour
         var hitInfo = Physics.RaycastAll(ray, float.MaxValue);
         var deltaRot = transform.rotation * Quaternion.Inverse(prevRotation);
 
-        if (hitInfo.Length > 1)
+        if (hitInfo.Length > 0)
         {
             var eA = deltaRot.eulerAngles;
             var rot = grabbedRb.transform.rotation.eulerAngles;
@@ -67,6 +66,7 @@ public class Grabber : MonoBehaviour
             GrabInHand();
         }
     }
+
     private void GrabInput()
     {
         if (Input.GetMouseButtonDown(0))
@@ -86,7 +86,7 @@ public class Grabber : MonoBehaviour
                     grabOffset = grabbedRb.transform.InverseTransformVector(grabbedRb.position - hitInfo.point);
                     prevRotation = transform.rotation;
                     layer = grabbedRb.gameObject.layer;
-                    grabbedRb.gameObject.layer = LayerMask.NameToLayer("Grabbed");
+                    grabbedRb.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }
             }
         }

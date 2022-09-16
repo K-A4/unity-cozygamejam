@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Vector3 InputVector { get; protected set; }
     [SerializeField] private float speed;
-    private bool isLocked;
 
     private void Update()
     {
-        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal"));
+        InputVector = new Vector3(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal"), 0);
         
-        if (inputVector != Vector2.zero && !isLocked)
+        if (InputVector != Vector3.zero)
         {
-            inputVector.Normalize();
-            Vector3 deltaPos = (transform.forward * inputVector.x + transform.right * inputVector.y) * speed * Time.deltaTime;
+            InputVector.Normalize();
+            Vector3 deltaPos = (transform.forward * InputVector.x + transform.right * InputVector.y) * speed * Time.deltaTime;
             transform.position += deltaPos;
         }
-    }
-    public void SetLock(bool locked)
-    {
-        isLocked = locked;
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4052297161078837760}
   - component: {fileID: 903112932371365414}
   - component: {fileID: 6076067439938536250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BreadSlice
   m_TagString: Untagged
   m_Icon: {fileID: 0}

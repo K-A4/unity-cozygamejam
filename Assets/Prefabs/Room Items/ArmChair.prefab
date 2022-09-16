@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7340811580323549490}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.15, y: 1.013, z: -0.333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8561079154945515988}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &9044565670439107438
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +178,7 @@ MonoBehaviour:
     Cost: 15
     MaxHealth: 7
     CozyPerBuy: 5
-    CozyPerUse: 5
+    CozyPerUse: 20
     IsLarge: 0
   sitPos: {fileID: 5429824987874077746}
+  sitTime: 0.5

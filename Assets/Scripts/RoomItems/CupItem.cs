@@ -8,6 +8,8 @@ public class CupItem : RoomItem
 
     public override void Use(CozyOfPlayer cozyOfPlayer)
     {
-        throw new System.NotImplementedException();
+        cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
+        StartCoroutine(ParticleData.PlayParticle(transform));
+        Health--;
     }
 }
