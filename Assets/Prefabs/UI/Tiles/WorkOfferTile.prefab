@@ -8,6 +8,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2728765607648948532, guid: 74977d46226868e4e987480de41aff77, type: 3}
+      propertyPath: textItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728765607648948532, guid: 74977d46226868e4e987480de41aff77, type: 3}
+      propertyPath: textItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 1990969776368561038}
+    - target: {fileID: 2728765607648948532, guid: 74977d46226868e4e987480de41aff77, type: 3}
+      propertyPath: textItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 4413378259949872573}
+    - target: {fileID: 2728765607648948532, guid: 74977d46226868e4e987480de41aff77, type: 3}
       propertyPath: TileTextItems.Array.size
       value: 2
       objectReference: {fileID: 0}

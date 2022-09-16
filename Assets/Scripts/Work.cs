@@ -55,6 +55,9 @@ public class Work : UIWindow
 
     public void CompleteOffer(WorkOfferInfo offerInfo)
     {
+        Player.Instance.CozyOfPlayer.ChangeMoney(offerInfo.Proffit);
+        Player.Instance.CozyOfPlayer.ChangeCozy(-offerInfo.CozyDamage);
         CreateOffers();
+        gameObject.SetActive(false);
     }
 }

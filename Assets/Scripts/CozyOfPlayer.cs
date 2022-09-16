@@ -28,7 +28,7 @@ public class CozyOfPlayer : MonoBehaviour
 
     private void Update()
     {
-        ChangeCozy(-Time.time * 0.001f);
+        ChangeCozy(-Time.deltaTime * 0.3f);
     }
 
     public void ChangeCozy(float value)
