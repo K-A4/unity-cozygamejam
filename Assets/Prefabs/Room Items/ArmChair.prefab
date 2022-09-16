@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 4710989198185229937}
   - component: {fileID: 7387096353242389179}
   - component: {fileID: 7387096353242389173}
-  - component: {fileID: 7387096353242389175}
-  - component: {fileID: 7387096353242389174}
+  - component: {fileID: 1029747941522499216}
+  - component: {fileID: 7812087147631215986}
   - component: {fileID: 4611828128185726638}
   m_Layer: 7
   m_Name: ArmChair
@@ -135,7 +135,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7387096353242389175
+--- !u!65 &1029747941522499216
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,9 +146,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.97443867, y: 0.5653101, z: 0.83578104}
-  m_Center: {x: 0.1487968, y: 0.28851026, z: -0.38657793}
---- !u!65 &7387096353242389174
+  m_Size: {x: 0.791995, y: 0.9534354, z: 0.26498187}
+  m_Center: {x: 0.14122704, y: 0.4825729, z: 0.2740689}
+--- !u!65 &7812087147631215986
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,8 +159,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.68598413, y: 0.45573348, z: 0.23311341}
-  m_Center: {x: 0.15433264, y: 0.73142385, z: -0.08524412}
+  m_Size: {x: 0.65902793, y: 0.40255028, z: 0.83578104}
+  m_Center: {x: 0.14218253, y: 0.20713034, z: -0.011330694}
 --- !u!114 &4611828128185726638
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,9 +13,14 @@ GameObject:
   - component: {fileID: 2103606571753777447}
   - component: {fileID: 2487640954268535393}
   - component: {fileID: 4842752671391372405}
+  - component: {fileID: 3840214322066679735}
+  - component: {fileID: 8383607344808149069}
+  - component: {fileID: 9172741962591607767}
+  - component: {fileID: 3327174360001961545}
+  - component: {fileID: -4869827249926690560}
   m_Layer: 0
   m_Name: CircleTable
-  m_TagString: Untagged
+  m_TagString: Large
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,5 +117,76 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0680337, y: 0.74829656, z: 1.0680337}
-  m_Center: {x: 0, y: 0.38434514, z: 0.000000029802322}
+  m_Size: {x: 0.87023973, y: 0.057230234, z: 0.88267136}
+  m_Center: {x: 0.015263796, y: 0.7298783, z: 0.0009279251}
+--- !u!65 &3840214322066679735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446277992233044210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18267584, y: 0.6603566, z: 0.14929771}
+  m_Center: {x: -0.3019998, y: 0.34037516, z: 0.30090046}
+--- !u!65 &8383607344808149069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446277992233044210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18267584, y: 0.6603566, z: 0.14929771}
+  m_Center: {x: 0.3019998, y: 0.34037516, z: 0.30090046}
+--- !u!65 &9172741962591607767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446277992233044210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18267584, y: 0.6603566, z: 0.14929771}
+  m_Center: {x: 0.3019998, y: 0.34037516, z: -0.3009005}
+--- !u!65 &3327174360001961545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446277992233044210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18267584, y: 0.6603566, z: 0.14929771}
+  m_Center: {x: -0.3019998, y: 0.34037516, z: -0.3009005}
+--- !u!114 &-4869827249926690560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446277992233044210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef35d4b0edbd6a408c03b124845f517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    Name: Table
+    Cost: 100
+    MaxHealth: 0
+    CozyPerBuy: 30
+    CozyPerUse: 0
+    IsLarge: 1

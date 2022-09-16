@@ -130,13 +130,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info:
-    Name: 
+    Name: Bed
     Cost: 0
     MaxHealth: 0
     CozyPerBuy: 0
     CozyPerUse: 0
     IsLarge: 0
   sitPos: {fileID: 1724991697298635837}
+  sitTime: 0.5
 --- !u!1 &8663298281734386101
 GameObject:
   m_ObjectHideFlags: 0
