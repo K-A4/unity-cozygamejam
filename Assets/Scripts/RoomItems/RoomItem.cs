@@ -47,16 +47,26 @@ public abstract class RoomItem : MonoBehaviour
     protected virtual void Awake()
     {
         health = Info.MaxHealth;
+        gameObject.layer = LayerMask.NameToLayer("Interact");
     }
 
     public virtual void Use(CozyOfPlayer cozyOfPlayer)
     {
-        cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
-        Health--;
+        Debug.Log($"Using {Info.Name}...");
+        ParticleManager.CreateItemEffect(
+            transform,
+            ParticleManager.Particles.PsItemUseDefault,
+            () =>
+            {
+                cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
+                Health--;
+            }
+        );
     }
 
     public virtual void OnEndHealth()
     {
+        ParticleManager.CreateDestroyItemEffect(transform.position, GetComponent<Renderer>().material);
         Destroy(gameObject);
     }
 }

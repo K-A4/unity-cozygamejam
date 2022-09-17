@@ -130,8 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: Wardrobe
-    Cost: 30
-    MaxHealth: 60
-    CozyPerBuy: 20
+    Cost: 500
+    MaxHealth: 10
+    CozyPerBuy: 10
     CozyPerUse: 5
     IsLarge: 1

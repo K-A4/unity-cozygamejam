@@ -131,10 +131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: Chair
-    Cost: 10
+    Cost: 100
     MaxHealth: 10
     CozyPerBuy: 5
-    CozyPerUse: 10
+    CozyPerUse: 5
     IsLarge: 0
   sitPos: {fileID: 6837196884487238713}
   sitTime: 0.5

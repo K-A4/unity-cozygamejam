@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942ee245ceec18949929c1797f4f7322, type: 3}
+  m_Name: Particle prefabs
+  m_EditorClassIdentifier: 
+  PsDestroyItem: {fileID: 1104174198736617756, guid: 6a11ec710b7a6f744970ce9338993139, type: 3}
+  PsWaterDrink: {fileID: 1104174198736617756, guid: a4762ce6c563d3440a5fe3e9440cc39e, type: 3}
+  PsItemUseDefault: {fileID: 1104174198736617756, guid: 6842d2dc46c57e445b0a4750eca276c1, type: 3}

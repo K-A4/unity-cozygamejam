@@ -128,10 +128,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info:
-    Name: 
+    Name: Box
     Cost: 0
-    MaxHealth: 0
+    MaxHealth: 1
     CozyPerBuy: 0
     CozyPerUse: 0
     IsLarge: 0
-  BoxPrefabLink: {fileID: 7171494170441376293}

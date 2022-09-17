@@ -131,10 +131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: Bed
-    Cost: 0
-    MaxHealth: 0
-    CozyPerBuy: 0
-    CozyPerUse: 0
+    Cost: 100
+    MaxHealth: 10
+    CozyPerBuy: 5
+    CozyPerUse: 2
     IsLarge: 0
   sitPos: {fileID: 1724991697298635837}
   sitTime: 0.5

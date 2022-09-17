@@ -8,8 +8,16 @@ public class CupItem : RoomItem
 
     public override void Use(CozyOfPlayer cozyOfPlayer)
     {
-        cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
-        StartCoroutine(ParticleData.PlayParticle(transform));
-        Health--;
+        //cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
+        ParticleManager.CreateItemEffect(
+            transform, 
+            ParticleManager.Particles.PsWaterDrink, 
+            () => {
+                cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
+                Health--; 
+            }
+        );
+        //StartCoroutine(ParticleManager.PlayParticle(transform));
+        //Health--;
     }
 }
