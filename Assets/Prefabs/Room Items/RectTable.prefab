@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7958575048819779618}
   - component: {fileID: 8561345973378982926}
   - component: {fileID: 1126804577955398188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RectTable
   m_TagString: Large
   m_Icon: {fileID: 0}
@@ -190,3 +190,4 @@ MonoBehaviour:
     CozyPerBuy: 10
     CozyPerUse: 10
     IsLarge: 1
+  itemMaxCD: 0.5

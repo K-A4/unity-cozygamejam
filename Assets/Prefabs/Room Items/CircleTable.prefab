@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 9172741962591607767}
   - component: {fileID: 3327174360001961545}
   - component: {fileID: -4869827249926690560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CircleTable
   m_TagString: Large
   m_Icon: {fileID: 0}
@@ -190,3 +190,4 @@ MonoBehaviour:
     CozyPerBuy: 30
     CozyPerUse: 10
     IsLarge: 1
+  itemMaxCD: 0.5

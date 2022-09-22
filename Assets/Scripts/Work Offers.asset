@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffersList:
   - Name: Garbage collector
-    Proffit: 10
+    Proffit: 20
     CozyDamage: 10
   - Name: Office worker
-    Proffit: 15
+    Proffit: 30
     CozyDamage: 15
   - Name: Master
-    Proffit: 50
+    Proffit: 60
     CozyDamage: 40
   - Name: Driver
-    Proffit: 15
+    Proffit: 25
     CozyDamage: 25
   - Name: Slave
     Proffit: 1
-    CozyDamage: 25
+    CozyDamage: 10
   - Name: Hacker
-    Proffit: 100
-    CozyDamage: 50
+    Proffit: 75
+    CozyDamage: 25

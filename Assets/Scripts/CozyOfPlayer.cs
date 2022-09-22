@@ -30,6 +30,7 @@ public class CozyOfPlayer : MonoBehaviour
     {
         if (!LevelManager.IsGameEnded)
         {
+            print(value);
             SetCozy(Cozy + value);
         }
     }

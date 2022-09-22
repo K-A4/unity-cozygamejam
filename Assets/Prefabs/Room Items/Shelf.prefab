@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1360517075745342514}
   - component: {fileID: 7765186394096533947}
   - component: {fileID: 8906166440050691146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shelf
   m_TagString: Large
   m_Icon: {fileID: 0}
@@ -134,3 +134,4 @@ MonoBehaviour:
     CozyPerBuy: 20
     CozyPerUse: 5
     IsLarge: 1
+  itemMaxCD: 0.5

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1531065506973743964}
   - component: {fileID: 8027033756349098679}
   - component: {fileID: -2466293503097110152}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wardrobe
   m_TagString: Large
   m_Icon: {fileID: 0}
@@ -135,3 +135,4 @@ MonoBehaviour:
     CozyPerBuy: 10
     CozyPerUse: 5
     IsLarge: 1
+  itemMaxCD: 0.5

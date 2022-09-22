@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1250603464671678322}
   - component: {fileID: 3112638648052284325}
   - component: {fileID: -8978979473046740176}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pumpkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,3 +136,4 @@ MonoBehaviour:
     CozyPerBuy: 20
     CozyPerUse: 10
     IsLarge: 0
+  itemMaxCD: 0.5

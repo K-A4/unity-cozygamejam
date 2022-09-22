@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1266127011447148339}
   - component: {fileID: 1794413064941694936}
   - component: {fileID: -7207190121200340927}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Toster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,8 @@ MonoBehaviour:
   info:
     Name: Toster
     Cost: 15
-    MaxHealth: 5
-    CozyPerBuy: 0
-    CozyPerUse: 5
+    MaxHealth: 7
+    CozyPerBuy: 10
+    CozyPerUse: 8
     IsLarge: 0
+  itemMaxCD: 0.5

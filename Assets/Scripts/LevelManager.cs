@@ -15,6 +15,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        IsGameEnded = false;
+        instance.decreaseSpeed = 0;
         instance = this;
         Player.Instance.CozyOfPlayer.OnEndCozyEvent.AddListener(EndGame);
         ((UIGameOverWindow)UIGame.GetWindow(EWindow.GameOver)).onRestartGame.AddListener(RestartGame);
@@ -28,7 +30,6 @@ public class LevelManager : MonoBehaviour
         {
             decreaseSpeed = maxDecreaseSpeed;
         }
-
         Player.Instance.CozyOfPlayer.ChangeCozy(-Time.deltaTime * decreaseSpeed);
     }
 
@@ -41,5 +42,10 @@ public class LevelManager : MonoBehaviour
     {
         IsGameEnded = true;
         UIGame.ShowWindow(EWindow.GameOver);
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
     }
 }

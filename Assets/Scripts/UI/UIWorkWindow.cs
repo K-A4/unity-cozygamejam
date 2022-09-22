@@ -60,10 +60,9 @@ public class UIWorkWindow : UIWindow
 
     public void CompleteOffer(WorkOfferInfo offerInfo)
     {
+        UIGame.HideWindows();
         Player.Instance.CozyOfPlayer.ChangeMoney(offerInfo.Proffit);
         Player.Instance.CozyOfPlayer.ChangeCozy(-offerInfo.CozyDamage);
         CreateOffers();
-        UIGame.HideWindows();
-        //gameObject.SetActive(false);
     }
 }
