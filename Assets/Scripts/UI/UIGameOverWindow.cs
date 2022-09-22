@@ -30,6 +30,6 @@ public class UIGameOverWindow : UIWindow
     {
         base.Show();
         TimeSpan t = TimeSpan.FromSeconds(Time.time);
-        timeText.text = $"{t.Minutes} min. {t.Seconds} sec.";
+        timeText.text = $"Your life was cozy for {t.Minutes} min. {t.Seconds} sec.";
     }
 }

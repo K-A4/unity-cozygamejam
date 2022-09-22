@@ -103,6 +103,14 @@ PrefabInstance:
       propertyPath: m_text
       value: ' 150'
       objectReference: {fileID: 0}
+    - target: {fileID: 9014577315903665009, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b4d70d1499a3714a928d82fbef3d376, type: 2}
+    - target: {fileID: 9014577315903665009, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4325750180132179954, guid: 1b4d70d1499a3714a928d82fbef3d376, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
 --- !u!114 &5960838751003386904 stripped
@@ -231,6 +239,14 @@ PrefabInstance:
       propertyPath: m_text
       value: -150
       objectReference: {fileID: 0}
+    - target: {fileID: 9014577315903665009, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b4d70d1499a3714a928d82fbef3d376, type: 2}
+    - target: {fileID: 9014577315903665009, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4325750180132179954, guid: 1b4d70d1499a3714a928d82fbef3d376, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
 --- !u!114 &3118888093975720916 stripped
@@ -493,6 +509,14 @@ PrefabInstance:
       propertyPath: m_text
       value: +150
       objectReference: {fileID: 0}
+    - target: {fileID: 9014577315903665009, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b4d70d1499a3714a928d82fbef3d376, type: 2}
+    - target: {fileID: 9014577315903665009, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4325750180132179954, guid: 1b4d70d1499a3714a928d82fbef3d376, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bf0b3bd583e1664382bc793fd67cdea, type: 3}
 --- !u!114 &1603909992328082079 stripped
