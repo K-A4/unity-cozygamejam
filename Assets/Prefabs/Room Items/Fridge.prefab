@@ -129,8 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: Fridge
-    Cost: 50
-    MaxHealth: 100
-    CozyPerBuy: 25
-    CozyPerUse: 2
+    Cost: 30
+    MaxHealth: 12
+    CozyPerBuy: 20
+    CozyPerUse: 8
     IsLarge: 1

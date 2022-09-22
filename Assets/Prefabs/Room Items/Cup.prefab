@@ -130,8 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: Cup
-    Cost: 2
+    Cost: 10
     MaxHealth: 5
-    CozyPerBuy: 0
-    CozyPerUse: 10
+    CozyPerBuy: 8
+    CozyPerUse: 5
     IsLarge: 0

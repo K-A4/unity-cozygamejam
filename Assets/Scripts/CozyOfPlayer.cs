@@ -28,7 +28,10 @@ public class CozyOfPlayer : MonoBehaviour
 
     public void ChangeCozy(float value)
     {
-        SetCozy(Cozy + value);
+        if (!LevelManager.IsGameEnded)
+        {
+            SetCozy(Cozy + value);
+        }
     }
 
     public bool ChangeMoney(float value)

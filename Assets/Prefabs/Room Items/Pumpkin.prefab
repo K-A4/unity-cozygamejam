@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7080062098997644629}
   - component: {fileID: 1250603464671678322}
   - component: {fileID: 3112638648052284325}
+  - component: {fileID: -8978979473046740176}
   m_Layer: 0
   m_Name: Pumpkin
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3339082285309697363, guid: 55ea320d3390eb94fbd4f3b55217bf14, type: 3}
+--- !u!114 &-8978979473046740176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737425863426550912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b9a25955da1184891b4d1e88b2e361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    Name: Pumpkin
+    Cost: 20
+    MaxHealth: 1
+    CozyPerBuy: 20
+    CozyPerUse: 10
+    IsLarge: 0

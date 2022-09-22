@@ -130,7 +130,7 @@ MonoBehaviour:
   info:
     Name: Pillow
     Cost: 20
-    MaxHealth: 0
+    MaxHealth: 2
     CozyPerBuy: 0
     CozyPerUse: 10
     IsLarge: 0

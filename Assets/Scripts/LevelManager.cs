@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public bool IsGameEnded { get; private set; }
+    public static bool IsGameEnded { get; private set; }
 
-    [SerializeField] private float cozyDecreaseSpeed = 2;
+    [SerializeField] private float maxDecreaseSpeed = 2;
+    [SerializeField] private float decreaseAcc = 0.1f;
+    private float decreaseSpeed = 2;
 
     private static LevelManager instance;
 
@@ -20,10 +22,14 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (!IsGameEnded)
+        decreaseSpeed += Time.deltaTime * decreaseAcc;
+
+        if (decreaseSpeed >= maxDecreaseSpeed)
         {
-            Player.Instance.CozyOfPlayer.ChangeCozy(-Time.deltaTime * cozyDecreaseSpeed);
+            decreaseSpeed = maxDecreaseSpeed;
         }
+
+        Player.Instance.CozyOfPlayer.ChangeCozy(-Time.deltaTime * decreaseSpeed);
     }
 
     public static void RestartGame()

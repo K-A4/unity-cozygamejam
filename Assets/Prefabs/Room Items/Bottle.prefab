@@ -130,9 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: Bottle
-    Cost: 2
-    MaxHealth: 5
+    Cost: 10
+    MaxHealth: 12
     CozyPerBuy: 0
-    CozyPerUse: 10
+    CozyPerUse: 4
     IsLarge: 0
-  particle: {fileID: 0}

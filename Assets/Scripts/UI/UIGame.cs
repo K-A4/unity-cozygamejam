@@ -36,6 +36,14 @@ public class UIGame : MonoBehaviour
         ow.Show();
     }
 
+    public static void HideWindows()
+    {
+        foreach(var w in instance.windows)
+        {
+            w.Hide();
+        }
+    }
+
 
     public static UIWindow GetWindow(EWindow type)
     {

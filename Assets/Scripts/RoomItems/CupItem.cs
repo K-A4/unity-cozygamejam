@@ -6,7 +6,7 @@ public class CupItem : RoomItem
 {
     public override int PlacementRules => throw new System.NotImplementedException();
 
-    public override void Use()
+    public override void Use(Vector3 UsePos)
     {
         //cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
         ParticleManager.CreateItemEffect(
@@ -15,7 +15,8 @@ public class CupItem : RoomItem
             () => {
                 Player.Instance.CozyOfPlayer.ChangeCozy(Info.CozyPerUse);
                 Health--; 
-            }
+            },
+            GetComponent<Renderer>().material
         );
         //StartCoroutine(ParticleManager.PlayParticle(transform));
         //Health--;

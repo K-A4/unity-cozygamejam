@@ -13,6 +13,7 @@ public class UIShopWindow : UIWindow
     [SerializeField] private UITileListItem shopTilePrefab;
     [SerializeField] private UITileList tileList;
     [SerializeField] private Button exitButton;
+    [SerializeField] private Transform spawnTransform;
 
     private Dictionary<UITileListItem, RoomItem> offersList = new Dictionary<UITileListItem, RoomItem>();
 
@@ -40,19 +41,18 @@ public class UIShopWindow : UIWindow
 
     public void BuyItem(RoomItem item)
     {
-        CreateOffers();
-
         if (Player.Instance.CozyOfPlayer.ChangeMoney(-item.Info.Cost))
         {
-            
-            gameObject.SetActive(false);
+            CreateOffers();
+
+            UIGame.HideWindows();
             if (item.Info.IsLarge)
             {
-                var newItem = Instantiate(item, Vector3.zero * 1, Quaternion.identity);
+                var newItem = Instantiate(item, spawnTransform.position, Quaternion.identity);
             }
             else
             {
-                var newItem = Instantiate(roomItemsData.Box, Vector3.zero * 1, Quaternion.identity);
+                var newItem = Instantiate(roomItemsData.Box, spawnTransform.position, Quaternion.identity);
                 newItem.SetItemPrefab(item);
             }
             Player.Instance.CozyOfPlayer.ChangeCozy(item.Info.CozyPerBuy);

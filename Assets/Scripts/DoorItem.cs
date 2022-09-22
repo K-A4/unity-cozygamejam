@@ -14,7 +14,7 @@ public class DoorItem : RoomItem
         closeAngle = transform.rotation;
     }
 
-    public override void Use()
+    public override void Use(Vector3 UsePos)
     {
         DoorInteract();
     }

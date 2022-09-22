@@ -154,7 +154,7 @@ Shader "Unlit/CellShader"
                 float3 lightVec = _WorldSpaceLightPos0.xyz - i.posWorld;
 
                 diff = map(diff, 0, 1, 0.15f, 1.0f);
-                fixed3 lighting = (atten - (atten * sign(NdotL))) + (0.8f - NdotL) * sign(NdotL) / 2;
+                fixed3 lighting = ((atten - (atten * sign(NdotL))) + (0.8f - NdotL) /** sign(NdotL)*/) / 2;
 
                 fixed3 col = (lighting) * _LightColor0;
 

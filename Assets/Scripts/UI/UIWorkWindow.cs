@@ -63,6 +63,7 @@ public class UIWorkWindow : UIWindow
         Player.Instance.CozyOfPlayer.ChangeMoney(offerInfo.Proffit);
         Player.Instance.CozyOfPlayer.ChangeCozy(-offerInfo.CozyDamage);
         CreateOffers();
-        gameObject.SetActive(false);
+        UIGame.HideWindows();
+        //gameObject.SetActive(false);
     }
 }

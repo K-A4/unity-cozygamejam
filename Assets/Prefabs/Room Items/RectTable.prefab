@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6213786487367063203}
   - component: {fileID: 7958575048819779618}
   - component: {fileID: 8561345973378982926}
+  - component: {fileID: 1126804577955398188}
   m_Layer: 0
   m_Name: RectTable
   m_TagString: Large
@@ -170,3 +171,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.07, y: 0.70505273, z: 0.07}
   m_Center: {x: -0.515, y: 0.35125655, z: 0.335}
+--- !u!114 &1126804577955398188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047588841240325395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae39749eb69be34fb90f51bc30a21e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    Name: RectTable
+    Cost: 20
+    MaxHealth: 5
+    CozyPerBuy: 10
+    CozyPerUse: 10
+    IsLarge: 1

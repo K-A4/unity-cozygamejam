@@ -22,11 +22,26 @@ public class ParticleManager : MonoBehaviour
         Instance.StartCoroutine(Instance.PlayingParticleCorutine(ps));
     }
 
-    public static void CreateItemEffect(Transform itemTransform, ParticleSystem particleSystemPrefab, Action onSimulationEnd = null)
+    public static void CreateItemEffect(Transform itemTransform, ParticleSystem particleSystemPrefab,  Action onSimulationEnd = null, Material parentMaterial = null)
     {
         var ps = Instantiate(particleSystemPrefab, itemTransform);
+        if (parentMaterial)
+        {
+            ps.gameObject.GetComponent<Renderer>().material = parentMaterial;
+        }
         Instance.StartCoroutine(Instance.PlayingParticleCorutine(ps, onSimulationEnd));
     }
+
+    public static void CreateItemEffect(Transform itemTransform, ParticleSystem particleSystemPrefab, Vector3 EffectPos, Action onSimulationEnd = null, Material parentMaterial = null)
+    {
+        var ps = Instantiate(particleSystemPrefab, EffectPos, Quaternion.identity, itemTransform);
+        if (parentMaterial)
+        {
+            ps.gameObject.GetComponent<Renderer>().material = parentMaterial;
+        }
+        Instance.StartCoroutine(Instance.PlayingParticleCorutine(ps, onSimulationEnd));
+    }
+
 
     //public static IEnumerator PlayParticle(Transform transform)
     //{

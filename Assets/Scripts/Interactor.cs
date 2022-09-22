@@ -33,7 +33,10 @@ public class Interactor : MonoBehaviour
             {
                 if (hit.transform.TryGetComponent(out RoomItem interactItem))
                 {
-                    InteractWith(interactItem);
+                    if (interactItem.IsReady())
+                    {
+                        InteractWith(interactItem, hit.point);
+                    }
                 }
             }
         }
@@ -48,8 +51,8 @@ public class Interactor : MonoBehaviour
         onHover?.Invoke(hoverObject != null);
     }
 
-    private void InteractWith(RoomItem interactItem)
+    private void InteractWith(RoomItem interactItem, Vector3 pos)
     {
-        interactItem.Use();
+        interactItem.Use(pos);
     }
 }

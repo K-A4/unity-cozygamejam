@@ -175,10 +175,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: ArmChair
-    Cost: 15
-    MaxHealth: 7
-    CozyPerBuy: 5
-    CozyPerUse: 20
-    IsLarge: 0
+    Cost: 20
+    MaxHealth: 8
+    CozyPerBuy: 15
+    CozyPerUse: 10
+    IsLarge: 1
   sitPos: {fileID: 5429824987874077746}
   sitTime: 0.5

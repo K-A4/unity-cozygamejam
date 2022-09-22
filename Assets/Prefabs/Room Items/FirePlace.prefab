@@ -13,6 +13,11 @@ GameObject:
   - component: {fileID: 7552595829262434473}
   - component: {fileID: 963658483632744401}
   - component: {fileID: 2652401854994062002}
+  - component: {fileID: 2778585675468838834}
+  - component: {fileID: 6457046770429665576}
+  - component: {fileID: 3870756974935439320}
+  - component: {fileID: 5813074937879602723}
+  - component: {fileID: 1277083301494772313}
   m_Layer: 0
   m_Name: FirePlace
   m_TagString: Large
@@ -96,8 +101,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3978028, y: 1.4188406, z: 0.7117651}
-  m_Center: {x: -3.1597571e-24, y: 0.7192286, z: 0.35770807}
+  m_Size: {x: 1.3978028, y: 0.08070975, z: 0.7117651}
+  m_Center: {x: 1.5628133e-25, y: 0.050163176, z: 0.35770807}
 --- !u!65 &2652401854994062002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -111,3 +116,74 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.737412, y: 2.1342382, z: 0.38566285}
   m_Center: {x: 0.0011298656, y: 2.4952598, z: 0.19465694}
+--- !u!65 &2778585675468838834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345391747444466044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35884976, y: 1.4122419, z: 0.69816095}
+  m_Center: {x: 0.51947653, y: 0.7089658, z: 0.35090598}
+--- !u!65 &6457046770429665576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345391747444466044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35884976, y: 1.4122419, z: 0.69816095}
+  m_Center: {x: -0.5194765, y: 0.7089658, z: 0.35090598}
+--- !u!65 &3870756974935439320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345391747444466044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6813483, y: 0.29266262, z: 0.70367223}
+  m_Center: {x: 0.0106675625, y: 1.2753997, z: 0.35366163}
+--- !u!65 &5813074937879602723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345391747444466044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3978028, y: 1.4197271, z: 0.111267865}
+  m_Center: {x: -7.934016e-25, y: 0.71270835, z: 0.057459444}
+--- !u!114 &1277083301494772313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345391747444466044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae39749eb69be34fb90f51bc30a21e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    Name: FirePlace
+    Cost: 20
+    MaxHealth: 10
+    CozyPerBuy: 20
+    CozyPerUse: 10
+    IsLarge: 1

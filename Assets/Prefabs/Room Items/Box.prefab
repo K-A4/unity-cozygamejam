@@ -132,5 +132,5 @@ MonoBehaviour:
     Cost: 0
     MaxHealth: 1
     CozyPerBuy: 0
-    CozyPerUse: 0
+    CozyPerUse: 5
     IsLarge: 0

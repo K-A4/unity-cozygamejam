@@ -778,6 +778,7 @@ MonoBehaviour:
   labelGraphics: {fileID: 5872319230316612842}
   itemNameText: {fileID: 3227417739848491204}
   itemHealthText: {fileID: 8989331307980837635}
+  HealthLabel: {fileID: 5617311923711466461}
 --- !u!1 &2293581527225307825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,11 +1973,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9be43f723b8844a40819c7016910f224, type: 3}
---- !u!4 &9099420250253210608 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5292669121711410140, guid: 9be43f723b8844a40819c7016910f224, type: 3}
-  m_PrefabInstance: {fileID: 3978072686057175084}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2976282000891126032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2195809048217917756, guid: 9be43f723b8844a40819c7016910f224, type: 3}
@@ -1988,3 +1984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90b21342ecb731a40864a19cc10415ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &9099420250253210608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5292669121711410140, guid: 9be43f723b8844a40819c7016910f224, type: 3}
+  m_PrefabInstance: {fileID: 3978072686057175084}
+  m_PrefabAsset: {fileID: 0}

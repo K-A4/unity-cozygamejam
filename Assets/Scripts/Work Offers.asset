@@ -15,19 +15,19 @@ MonoBehaviour:
   OffersList:
   - Name: Garbage collector
     Proffit: 10
-    CozyDamage: 12
+    CozyDamage: 10
   - Name: Office worker
     Proffit: 15
-    CozyDamage: 20
+    CozyDamage: 15
   - Name: Master
-    Proffit: 100
-    CozyDamage: 50
+    Proffit: 50
+    CozyDamage: 40
   - Name: Driver
     Proffit: 15
-    CozyDamage: 30
+    CozyDamage: 25
   - Name: Slave
     Proffit: 1
-    CozyDamage: 50
+    CozyDamage: 25
   - Name: Hacker
-    Proffit: 1000
-    CozyDamage: 0
+    Proffit: 100
+    CozyDamage: 50

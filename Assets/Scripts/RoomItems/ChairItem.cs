@@ -11,7 +11,7 @@ public class ChairItem : RoomItem
     private bool sitting;
     public override int PlacementRules => throw new System.NotImplementedException();
 
-    public override void Use()
+    public override void Use(Vector3 UsePos)
     {
         var transform = Player.Instance.transform;
         Player.Instance.gameObject.layer = LayerMask.NameToLayer("Grabbed");
@@ -49,17 +49,9 @@ public class ChairItem : RoomItem
 
     private IEnumerator Sitting(Transform transform)
     {
-        var timeElapsed = 0.0f;
-
+        cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
         while (true)
         {
-            timeElapsed += Time.deltaTime;
-
-            if (timeElapsed <= 1)
-            {
-                cozyOfPlayer.ChangeCozy(Time.deltaTime * Info.CozyPerUse);
-            }
-
             if (Player.Instance.PlayerMovement.InputVector != Vector3.zero)
             {
                 StartCoroutine(StandUp(transform));

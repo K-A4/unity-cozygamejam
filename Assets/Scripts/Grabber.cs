@@ -12,6 +12,7 @@ public class Grabber : MonoBehaviour
     private Quaternion prevRotation;
     private Vector3 grabOffset;
     private bool isLarge = false;
+    private bool prevKinematic = false;
     private int layer;
 
     private void Update()
@@ -81,6 +82,7 @@ public class Grabber : MonoBehaviour
                 {
                     isLarge = grabbedRb.tag == "Large";
 
+                    prevKinematic = grabbedRb.isKinematic;
                     grabbedRb.isKinematic = true;
                     distance = hitInfo.distance;
                     grabOffset = grabbedRb.transform.InverseTransformVector(grabbedRb.position - hitInfo.point);
@@ -97,7 +99,7 @@ public class Grabber : MonoBehaviour
             {
                 if (grabbedRb)
                 {
-                    grabbedRb.isKinematic = false;
+                    grabbedRb.isKinematic = prevKinematic;
                     grabbedRb.gameObject.layer = layer;
                 }
                 isGrabbing = false;

@@ -8,6 +8,7 @@ public class UIItemInfoLabel : MonoBehaviour
     [SerializeField] private GameObject labelGraphics;
     [SerializeField] private TextMeshProUGUI itemNameText;
     [SerializeField] private TextMeshProUGUI itemHealthText;
+    [SerializeField] private GameObject HealthLabel;
 
     private RoomItem displayedItem = null;
 
@@ -36,7 +37,15 @@ public class UIItemInfoLabel : MonoBehaviour
         if(displayedItem != null)
         {
             itemNameText.text = displayedItem.Info.Name;
-            itemHealthText.text = $"{displayedItem.Health}/{displayedItem.Info.MaxHealth}";
+            if (displayedItem.Info.MaxHealth != 0)
+            {
+                HealthLabel.SetActive(true);
+                itemHealthText.text = $"{displayedItem.Health}/{displayedItem.Info.MaxHealth}";
+            }
+            else
+            {
+                HealthLabel.SetActive(false);
+            }
         }
         else
         {

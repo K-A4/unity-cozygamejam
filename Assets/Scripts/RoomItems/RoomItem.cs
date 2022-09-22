@@ -43,6 +43,26 @@ public abstract class RoomItem : MonoBehaviour
     private float health;
     public RoomItemInfo Info => info;
     [SerializeField] private RoomItemInfo info;
+    [SerializeField] private float itemMaxCD = 1.0f;
+    private float timeCD;
+
+    private void Update()
+    {
+        timeCD += Time.deltaTime;
+    }
+
+    public bool IsReady()
+    {
+        if (timeCD > itemMaxCD)
+        {
+            timeCD = 0;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
     protected virtual void Awake()
     {
@@ -55,18 +75,25 @@ public abstract class RoomItem : MonoBehaviour
         ParticleManager.CreateItemEffect(transform, ParticleManager.Particles.PsCreateItem);
     }
 
-    public virtual void Use()
+    public virtual void Use(Vector3 UsePos)
     {
         Debug.Log($"Using {Info.Name}...");
+        var pos = UsePos;
+
+        if (!Info.IsLarge)
+        {
+            pos = Vector3.zero;
+        }
+
         ParticleManager.CreateItemEffect(
-            transform,
-            ParticleManager.Particles.PsItemUseDefault,
-            () =>
-            {
-                Player.Instance.CozyOfPlayer.ChangeCozy(Info.CozyPerUse);
-                Health--;
-            }
-        );
+                transform,
+                ParticleManager.Particles.PsItemUseDefault, pos,
+                () =>
+                {
+                    Player.Instance.CozyOfPlayer.ChangeCozy(Info.CozyPerUse);
+                    Health--;
+                }
+            );
     }
 
     public virtual void OnEndHealth()

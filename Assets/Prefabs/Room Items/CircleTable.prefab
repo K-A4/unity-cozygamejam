@@ -185,8 +185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: Table
-    Cost: 100
-    MaxHealth: 0
+    Cost: 25
+    MaxHealth: 10
     CozyPerBuy: 30
-    CozyPerUse: 0
+    CozyPerUse: 10
     IsLarge: 1

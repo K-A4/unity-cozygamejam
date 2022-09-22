@@ -15,7 +15,7 @@ public class BoxItem : RoomItem
         ItemPrefab = item;
     }
 
-    public override void Use()
+    public override void Use(Vector3 UsePos)
     {
         if (ItemPrefab)
         {

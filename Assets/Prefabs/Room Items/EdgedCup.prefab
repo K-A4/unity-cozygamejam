@@ -130,8 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     Name: EdgedCup
-    Cost: 2
+    Cost: 15
     MaxHealth: 5
-    CozyPerBuy: 0
-    CozyPerUse: 10
+    CozyPerBuy: 10
+    CozyPerUse: 7
     IsLarge: 0
