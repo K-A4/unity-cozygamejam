@@ -5,7 +5,7 @@ using UnityEngine;
 public class TableItem : RoomItem
 {
     public override int PlacementRules => (int)EPlacementRules.Floor;
-    public override void Use(CozyOfPlayer cozyOfPlayer)
+    public override void Use()
     {
 
         //cozyOfPlayer.ChangeCozy(Info.CozyPerUse);

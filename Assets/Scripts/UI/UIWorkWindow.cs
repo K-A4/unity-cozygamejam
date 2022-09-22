@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class WorkOfferInfo
@@ -10,7 +11,7 @@ public class WorkOfferInfo
     public float CozyDamage;
 }
 
-public class Work : UIWindow
+public class UIWorkWindow : UIWindow
 {
     [Header("Data")]
     [SerializeField] private WorkOffersData workOffersData;
@@ -19,13 +20,17 @@ public class Work : UIWindow
     [Header("UI Links")]
     [SerializeField] private UITileList tileList;
     [SerializeField] private UITileListItem workTilePrefab;
+    [SerializeField] private Button exitButton;
+
 
     private Dictionary<UITileListItem, WorkOfferInfo> offersList = new Dictionary<UITileListItem, WorkOfferInfo>();
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         CreateOffers();
         tileList.OnItemClick += (tile) => CompleteOffer(offersList[tile]);
+        exitButton.onClick.AddListener(Hide);
     }
 
     public void CreateOffers()

@@ -8,4 +8,5 @@ public class ParticlesData : ScriptableObject
     public ParticleSystem PsDestroyItem;
     public ParticleSystem PsWaterDrink;
     public ParticleSystem PsItemUseDefault;
+    public ParticleSystem PsCreateItem;
 }

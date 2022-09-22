@@ -26,11 +26,6 @@ public class CozyOfPlayer : MonoBehaviour
         SetMoney(startMoneyCount);
     }
 
-    private void Update()
-    {
-        ChangeCozy(-Time.deltaTime * 0.3f);
-    }
-
     public void ChangeCozy(float value)
     {
         SetCozy(Cozy + value);
@@ -54,7 +49,7 @@ public class CozyOfPlayer : MonoBehaviour
     public void SetCozy(float value)
     {
         Cozy = value;
-        if (Cozy < 0)
+        if (Cozy <= 0)
         {
             Cozy = 0;
             OnEndCozyEvent.Invoke();

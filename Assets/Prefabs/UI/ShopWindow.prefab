@@ -48,6 +48,7 @@ MonoBehaviour:
   roomItemsData: {fileID: 11400000, guid: db01b7ceb3e87f241a06ecf98c2d73d2, type: 2}
   shopTilePrefab: {fileID: 4982357011884215560, guid: f632a4de38687c549b73496d7f42f4d0, type: 3}
   tileList: {fileID: 6348158661967853295}
+  exitButton: {fileID: 7697457212773493933}
 --- !u!1001 &4543777153309210584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,6 +59,22 @@ PrefabInstance:
     - target: {fileID: 116177951937547521, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
       propertyPath: m_text
       value: Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6186927406853790581, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6186927406853790581, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6186927406853790581, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6186927406853790581, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIWindow, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7428561777645453097, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -159,5 +176,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b90c1ef8b9d51a47a25227c41df37fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7697457212773493933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6186927406853790581, guid: 1fb06f4972dd794479c5ef1887d3dc9c, type: 3}
+  m_PrefabInstance: {fileID: 4543777153309210584}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

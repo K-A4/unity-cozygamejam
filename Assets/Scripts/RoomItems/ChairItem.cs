@@ -7,14 +7,13 @@ public class ChairItem : RoomItem
     [SerializeField] private Transform sitPos;
     [SerializeField] private float sitTime;
     private Vector3 StartPos;
-    private CozyOfPlayer cozyOfPlayer;
+    private CozyOfPlayer cozyOfPlayer => Player.Instance.CozyOfPlayer;
     private bool sitting;
     public override int PlacementRules => throw new System.NotImplementedException();
 
-    public override void Use(CozyOfPlayer cozyOfPlayer)
+    public override void Use()
     {
         var transform = Player.Instance.transform;
-        this.cozyOfPlayer = cozyOfPlayer;
         Player.Instance.gameObject.layer = LayerMask.NameToLayer("Grabbed");
         StartPos = transform.position;
 

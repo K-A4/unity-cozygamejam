@@ -14,7 +14,7 @@ public class DoorItem : RoomItem
         closeAngle = transform.rotation;
     }
 
-    public override void Use(CozyOfPlayer cozyOfPlayer)
+    public override void Use()
     {
         DoorInteract();
     }

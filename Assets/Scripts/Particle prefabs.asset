@@ -15,3 +15,4 @@ MonoBehaviour:
   PsDestroyItem: {fileID: 1104174198736617756, guid: 6a11ec710b7a6f744970ce9338993139, type: 3}
   PsWaterDrink: {fileID: 1104174198736617756, guid: a4762ce6c563d3440a5fe3e9440cc39e, type: 3}
   PsItemUseDefault: {fileID: 1104174198736617756, guid: 6842d2dc46c57e445b0a4750eca276c1, type: 3}
+  PsCreateItem: {fileID: 1104174198736617756, guid: 453db64a39bc91740b00032a23e189d5, type: 3}

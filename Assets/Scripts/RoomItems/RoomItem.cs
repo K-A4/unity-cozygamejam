@@ -50,7 +50,12 @@ public abstract class RoomItem : MonoBehaviour
         gameObject.layer = LayerMask.NameToLayer("Interact");
     }
 
-    public virtual void Use(CozyOfPlayer cozyOfPlayer)
+    protected virtual void Start()
+    {
+        ParticleManager.CreateItemEffect(transform, ParticleManager.Particles.PsCreateItem);
+    }
+
+    public virtual void Use()
     {
         Debug.Log($"Using {Info.Name}...");
         ParticleManager.CreateItemEffect(
@@ -58,7 +63,7 @@ public abstract class RoomItem : MonoBehaviour
             ParticleManager.Particles.PsItemUseDefault,
             () =>
             {
-                cozyOfPlayer.ChangeCozy(Info.CozyPerUse);
+                Player.Instance.CozyOfPlayer.ChangeCozy(Info.CozyPerUse);
                 Health--;
             }
         );

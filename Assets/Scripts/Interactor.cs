@@ -50,6 +50,6 @@ public class Interactor : MonoBehaviour
 
     private void InteractWith(RoomItem interactItem)
     {
-        interactItem.Use(Player.Instance.CozyOfPlayer);
+        interactItem.Use();
     }
 }

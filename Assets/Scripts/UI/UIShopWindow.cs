@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Shop : UIWindow
+public class UIShopWindow : UIWindow
 {
     [Header("Data")]
     [SerializeField] private RoomItemsData roomItemsData;
@@ -11,13 +12,16 @@ public class Shop : UIWindow
     [Header("UI Links")]
     [SerializeField] private UITileListItem shopTilePrefab;
     [SerializeField] private UITileList tileList;
+    [SerializeField] private Button exitButton;
 
     private Dictionary<UITileListItem, RoomItem> offersList = new Dictionary<UITileListItem, RoomItem>();
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         CreateOffers();
         tileList.OnItemClick += (tile) => BuyItem(offersList[tile]);
+        exitButton.onClick.AddListener(Hide);
     }
 
     public void CreateOffers()

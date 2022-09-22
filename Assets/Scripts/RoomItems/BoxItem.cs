@@ -15,7 +15,7 @@ public class BoxItem : RoomItem
         ItemPrefab = item;
     }
 
-    public override void Use(CozyOfPlayer cozyOfPlayer)
+    public override void Use()
     {
         if (ItemPrefab)
         {
