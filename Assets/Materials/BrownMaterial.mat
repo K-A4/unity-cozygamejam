@@ -25,9 +25,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _RimPower: 8
+    - _RimEnabled: 1
+    - _RimPower: 0.23
     m_Colors:
     - _Color: {r: 0.49056602, g: 0.2582104, b: 0.19622639, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.09433961, g: 0.04222142, b: 0.007475962, a: 1}
     - _ShadowColor: {r: 0.18867922, g: 0.11754853, b: 0.070131704, a: 1}
   m_BuildTextureStacks: []
