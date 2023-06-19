@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bcf87b0acd1868b469a42d26e6f215bf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - good and cozy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c875d7020e19e2540935ed6337b6356a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
